@@ -1,0 +1,22 @@
+<!--
+  @description       : 
+  @author            : Satish Chandrashekar
+  @group             : 
+  @last modified on  : 03-09-2021
+  @last modified by  : Satish Chandrashekar
+  Modifications Log 
+  Ver   Date         Author                 Modification
+  1.0   03-09-2021   Satish Chandrashekar   Initial Version
+-->
+<template>
+    <lightning-card title="Unit Status" icon-name="standard:bot">
+        <lightning-input
+            label="Unit Number"
+            value={unitNumber}
+            onchange={handleChange} >
+        </lightning-input>
+      <div class="slds-m-around_medium">
+        Unit {unitNumber} alive!
+      </div>
+    </lightning-card>
+  </template>
